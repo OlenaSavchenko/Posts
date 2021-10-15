@@ -1,7 +1,7 @@
 import { useState } from "react";
 import { useHistory } from 'react-router';
 import { useDispatch } from "react-redux"
-import { deletePosts as deletePostState } from '../../store/posts/actions';
+import { deletePost as deletePostState } from '../../store/posts/actions';
 import { deletePost } from '../../api/posts'
 import PostCard from "../PostsCard/PostsCard";
 import Modal from "../Modal/Modal"

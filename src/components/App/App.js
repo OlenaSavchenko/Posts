@@ -1,7 +1,7 @@
 import { Switch, Route, Redirect } from 'react-router-dom';
 import Posts from "../../pages/Posts";
 import Post from '../../pages/Post';
-import ErrorPage from '../../pages/ErrorPage';
+import NotFound from '../../pages/NotFound';
 
 
 const App = () => {
@@ -13,7 +13,7 @@ const App = () => {
         </Route>
         <Route exact path="/posts" component={Posts} />
         <Route exact path="/posts/:id" component={Post} />
-        <Route path="*" component={ErrorPage} />
+        <Route path="*" component={NotFound} />
       </Switch>
     </>
   );

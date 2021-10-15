@@ -24,7 +24,7 @@ const Modal = (props) => {
 
     const modifyPost = async (obj) => {
         const newPost = await updatePost(obj)
-        dispatch(updatePostState(newPost.id))
+        dispatch(updatePostState(newPost))
     }
 
     return (<>
