@@ -1,5 +1,5 @@
 # Posts APP
-## Simple React APP with AJAX and Redux
+## Simple React APP with Fetch API and Redux
 
 ### Posts page:
 "Show more" -  to move to post page
