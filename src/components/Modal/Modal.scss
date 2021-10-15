@@ -5,30 +5,47 @@
     left: 0;  
 }
 
-.modal-box .modal-content {
+.modal-content {
     max-width: 560px;
+    position: relative;
     z-index: 1055;
     margin: 0 auto;
     color: rgb(255, 255, 255);
 }
 
-.modal-box .modal-header {
+ .modal-header {
     border-bottom: none;
 }
 
-.modal-box .modal-header, .modal-body, .modal-footer {
+ .modal-header, .modal-body, .modal-footer {
     padding: 1rem 30px;
 }
 
-.modal-box .modal-title {
+.modal-title {
     font-size: 25px;
+    text-transform: uppercase;
+    color: black;
 }
 
-.modal-box .modal-footer{
+ .modal-footer{
     justify-content: center;
     border-top: none;
 }
 
  .modal-backdrop {
-    background-color: transparent;  
+     opacity: 0.5; 
+ }
+
+ .modal-close-icon {
+     font-size: 30px;
+     color: red;
+     margin-left: auto;
+     &:hover{
+         color: red;
+     }
+ }
+
+ .posts-form {
+     display: grid;
+     row-gap: 30px;
  }

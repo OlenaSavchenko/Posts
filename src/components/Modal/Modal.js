@@ -28,18 +28,19 @@ const Modal = (props) => {
     }
 
     return (<>
-        <div className={`modal-box`}>
+        <div className="modal-box">
             <div className="modal-content">
                 <div className="modal-header">
-                    <button onClick={onCloseClick}>
-                        <span className="modal-close-icon">&times;</span>
+                    <h2 className="modal-title">{post.id ? "Edit post" : "Create post"}</h2>
+                    <button className="btn modal-close-icon" onClick={onCloseClick}>
+                        &times;
                     </button>
                 </div>
                 <div className="modal-body">
-                    <form id="posts-form">
+                    <form id="posts-form" className="posts-form">
                         <input name="post-title" type="text" placeholder="Post title" defaultValue={post.title} />
-                        <input name="post-text" type="text" placeholder="Post text" defaultValue={post.body} />
-                        <button type="submit" onClick={handleClick}>{post.id ? "Edit" : "Add"}</button>
+                        <textarea name="post-text" defaultValue={post.body} />
+                        <button className="btn btn-dark" type="submit" onClick={handleClick}>{post.id ? "Save" : "Add"}</button>
                     </form>
                 </div>
             </div>
